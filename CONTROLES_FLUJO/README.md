@@ -1,5 +1,5 @@
 # CONTROLES DE FLUJO
-todos los programas trabajan de atrves de instrucciones ordenadas.
+todos los programas trabajan de atraves de instrucciones ordenadas.
 existen maneras de romper el flujo normal de los programas
 creando `bifurcaciones` o creando `repeticion` de instrucciones.
 ## DECISIONES
