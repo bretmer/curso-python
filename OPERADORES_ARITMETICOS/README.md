@@ -1,7 +1,7 @@
 # OPERADORES ARITMETICOS
 Se usa para calcular un valor de dos a mas numeros, realizando operaciones aritmeticas y calculos matematicos.
 ## OPERADORES
-### `Suma` (+)
+### `Suma:` (+)
 Suma los numeros presentes a la izquierda y derecha del operador.
 >ejemplo:
 
@@ -16,7 +16,7 @@ El operador `+` tambien puede sumar dos cadenas de texto para ello se necesita d
 suma_string="hola"+"mundo"
 print(suma_string)  #holamundo
 ```
-### `Resta` (-)
+### `Resta:` (-)
 Produce la diferencia de sus operandos tanto de derecha a la izquierda.
 >ejemplo
 
@@ -24,7 +24,7 @@ Produce la diferencia de sus operandos tanto de derecha a la izquierda.
 resta=10-5
 print(resta)  #5
 ```
-### `Multiplicacion` (*)
+### `Multiplicacion:` (*)
 Opera los datos con una multiplicacion los datos numericos
 >ejemplo:
 
@@ -39,7 +39,7 @@ El operador `*` tambien multiplica strings.
 multiplicacion="hola"*3
 print(multiplicacion)  #holaholahola
 ```
-### `Division` (/)
+### `Division:` (/)
 Divide los datos numericos de una operacion aritmetica.
 >ejemplo:
 
@@ -47,7 +47,7 @@ Divide los datos numericos de una operacion aritmetica.
 division=20/2
 print(division)  #10
 ```
-### `Division exacta` (//)
+### `Division exacta:` (//)
 Este divicion opera con un resultado sin decimales, una division exacta.
 >ejemplo:
 
@@ -55,7 +55,7 @@ Este divicion opera con un resultado sin decimales, una division exacta.
 division_exacta=20//7
 print(division_exacta)  #2
 ```
-### `Modulo` (%)
+### `Modulo:` (%)
 Se trata de calcular el resto de la división entera entre ambos numeros.
 >ejemplo:
 
@@ -63,7 +63,7 @@ Se trata de calcular el resto de la división entera entre ambos numeros.
 modulo=10%3
 print(modulo)  #1
 ```
-### `Potencia` (**)
+### `Potencia:` (**)
 Este operador realiza la potencia al numero de la izquierda elevado al numero de la derecha.
 >ejemplo:
 
