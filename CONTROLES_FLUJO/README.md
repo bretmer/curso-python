@@ -12,3 +12,12 @@ if True:
     print("es verdad")
 ```
 ## CICLOS
+son los controles de flujo que repiten codigo y su sintaxsis es la siguiente
+### for
+> Para for:
+```python
+# este codigo imprime los numeros del 1 al 10
+for n in range(1,11):
+    print(n)
+```
+### while
