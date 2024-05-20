@@ -65,6 +65,30 @@
 # print(ultima_letra)   
 
 # crear un programa que muestre por terminal las siguiente figura.
-vocales:str="aeiou"
-for n in range(len(vocales)):
-    print(vocales[n]*(n+1))
+# vocales:str="aeiou"
+# for n in range(len(vocales)):
+#     print(vocales[n]*(n+1))
+
+# condicion=True
+# while True:
+#     print("hola")
+
+contador=0
+while contador <=5:
+    print(contador)
+    contador+=1
+print(f"el valor final{contador}")   
+
+# crear un programa que pida la cantida de notas que se debe registrar luego pedira las notas
+# imprimira el promedio
+cantidad=input("ingrese la cantidad de notas: ")
+suma=0
+contador=0
+while cantidad:
+    notas=input("ingrese sus notas: ")
+    contador+=1
+    promedio=suma((notas*cantidad))/cantidad
+    print(promedio)
+    
+
+

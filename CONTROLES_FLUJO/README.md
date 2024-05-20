@@ -20,4 +20,27 @@ son los controles de flujo que repiten codigo y su sintaxsis es la siguiente
 for n in range(1,11):
     print(n)
 ```
+#### `range`
+consume menos memoria y es mas rapida en oraciones pequeñas
+#### `in`
+consume menos memoria y es mas rapida en oraciones medianas
+#### `enumerate`
+consume mas memoria y es mas rapida con oraciones medianas y oraciones mas largas
+
 ### while
+es un mecanismo que usa `python` para repetir instrucciones, la semantica de esta sentencia es: `Mientras se cumpla la condicion has algo`
+```python
+while True:
+    print("hola")
+# es un bucle infinito
+
+# METODOS DE STRING = ARRAY
+nombre="jose"
+nombre.upper() #convirete el texto a mausculas
+
+apellidos="ALVAREZ"
+apellidos.lower() #convirete el texto a minusculas
+
+segundo_nombre="luis"
+segundo_nombre.capitalize() #convierte la primera letra en mayuscula
+```
