@@ -87,7 +87,7 @@ contador=0
 while cantidad:
     notas=input("ingrese sus notas: ")
     contador+=1
-    promedio=suma((notas*cantidad))/cantidad
+    promedio=suma(cantidad*(notas))/cantidad
     print(promedio)
     
 
