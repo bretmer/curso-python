@@ -16,9 +16,9 @@ lista_alumnos=[
         "apellido":"perez",
         "edad":80
     },{
-        "nombre":"ronny",
-        "apellido":"roman",
-        "edad":19
+        "nombre":"abel",
+        "apellido":"jurado",
+        "edad":24
     },{
         "nombre":"percy",
         "apellido":"yarihuaman",
@@ -32,5 +32,12 @@ nueva_lista=[
     }
 ]
 lista_alumnos.append(nueva_lista)
+lista_alumnos.pop(3)
 print(lista_alumnos)
-
+# buscar y mostrar el de la psicion 4 de la lista
+indice=lista_alumnos.index({
+    "nombre":"percy",
+    "apellido":"yarihuaman",
+    "edad":25
+})
+print(lista_alumnos[indice])
