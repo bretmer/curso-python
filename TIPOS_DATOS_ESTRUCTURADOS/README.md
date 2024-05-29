@@ -89,7 +89,10 @@ comparar=[1,2,3]>[1,2,4]
 print(comparar)  # False
 ```
 ### 6. Cuidado con las copias
-
+#### *Datos por valor:*
+![alt text](image.png)
+### *Datos por referencia:*
+![alt text](image1.png)
 ### 7. Fe de erratas (actualizar listas)
 ```python
 lista=[1,3,4,5,6]
