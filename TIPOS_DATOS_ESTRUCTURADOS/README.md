@@ -115,3 +115,30 @@ alumnos[0]={"nombre":"mafer","edad":15}
 alumnos[1]["sexo"]="por definir"
 print(alumnos)
 ```
+### 8. listas y diccionarios por compresion
+es una tecnica pythonica que nos permite crear listas y diccionarios en una sola linea conbinado bucles y decisiones.
+>[!NOTE]
+> VLC value loop condicion
+```python
+# LISTA POR COMPRENSION
+texto="1,4,8,9,6"
+nueva_lista=[]
+# "n" toma todos los valores de texto
+for n in texto .split(","):
+    # append agrega algo en la lista
+    nueva_lista.append(int(n))
+# aplicando la tecnica vlc "valor bucle y condicion"
+texto="1,4,8,9,6"
+nueva_lista=[int(n) for n in texto.split(",")if int(n)%2==0]
+print(nueva_lista)
+# DICCIONARIO POR COMPRENSION
+lista_amigos=["abel","anthony","edith","ruth"]
+diccionario={}
+for _,v in enumerate(lista_amigos):
+    diccionario[v]=len(v)
+print(diccionario)
+# aplicando el vlc
+lista_amigos=["abel","anthony","edith","ruth"]
+diccionario={amigo:len(amigo)for amigo in lista_amigos}
+print(diccionario)
+```

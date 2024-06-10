@@ -80,3 +80,44 @@ print(lista_mascotas)
 copia_lista_mascotas=lista_mascotas.copy()
 copia_lista_mascotas[2]["edad"]=4
 print(copia_lista_mascotas)
+
+# un empresario de alquiler de autos desea guardar en una base de datos de la informacion de sus vehiculos, proceso que desea automizar con un sistema 
+# informatico, las acciones que pueden realizar el empresario son ver las listas de autos que tienen, podra tambien actulizar la lista y agregar un 
+# nuevo vehiculo.
+# casos de uso
+# 1. Ver la lista de autos: El empresario puede consultar la lista completa de autos disponibles en la base de datos.
+# 2. Actualizar la lista de autos: El empresario puede modificar la información de un vehículo existente.
+# 3. Agregar un nuevo vehículo: El empresario puede añadir nuevos vehículos a la base de datos.
+# programacion
+lista_autos=[
+    {
+        "nombre":"supra mk4",
+        "marca":"toyota",
+        "año":1985
+    },{
+        "nombre":"GT-R",
+        "marca":"nissan",
+        "año":1969
+    },{
+        "nombre":"Golf",
+        "marca":"volkswagen",
+        "año":1985
+    },{
+        "nombre":"Q5",
+        "marca":"jac",
+        "año":1994
+    },{
+        "nombre":"celia",
+        "marca":"hyundai",
+        "año":1990
+    }]
+lista_autos[3]={"nombre":"G-class","marca":"mercedes-benz","año":1979}
+lista_autos.insert(5,{"nombre":"A6","marca":"audi","año":1998})
+
+print(lista_autos)
+
+# crear una lista de los primeros 20 numeros primos haciendo uso de comprension
+
+num_primos=[]
+lista_nueva=[num_primos for num_primos in range(2,100)if int(num_primos)%2==+1][:20]
+print(lista_nueva)
