@@ -114,3 +114,132 @@ alumnos("ruth","castillo")
 alumnos("anthony","cruzes","desaprobado")
 ```
 ## DESEMPAQUETADO/EMPAQUETADO DE ARGUMENTOS
+Python nos ofrece la posibilidad de empaquetar y desempaquetar argumentos cuando estamos invocando a una función, tanto para `argumentos posicionales` como para `argumentos nominales`. Y de esto se deriva el hecho de que podamos utilizar un número variable de argumentos en una función, algo que puede ser muy interesante según el caso de uso que tengamos.
+### EMPAQUETADO/DESEMPAQUETADO DE ARGUMENTOS POSICIONALES
+El empaquetado y desempaquetado de argumentos posicionales es una característica poderosa que permite manejar múltiples argumentos de manera flexible y concisa. A continuación, se explica cómo funciona este proceso con ejemplos detallados.
+- **EMPAQUETAR ARGUMENTOS POSICIONALES :** 👍Si utilizamos el operador `*` delante del nombre de un parámetro posicional, estaremos indicando que los argumentos pasados a la función se empaqueten en una tupla.
+>**Ejemplo**
+```python
+def sumar(*numero):
+    return sum(numero)
+print(sumar(1, 2, 3))    #la salida es 6
+```
+-  **DESEMPAQUETAR ARGUMENTOS POSICIONALES :** 👍El desempaquetado de argumentos posicionales es cuando se llama a una función. Esto se logra utilizando el operador `*` al pasar los argumentos.
+```python
+def multiplicar(a, b, c):
+    return a * b * c
+valores = (2, 3, 4)
+resultado = multiplicar(*valores)
+print(resultado)  # el resultado es 24
+```
+### EMPAQUETADO/DESEMPAQUETADO DE ARGUMENTOS NOMILALES
+el empaquetado y desempaquetado de argumentos nominales es una característica que permite trabajar con funciones que aceptan un número variable de argumentos con nombre. Este proceso se realiza utilizando el operador `**` .
+- **EMPAQUETADO DE ARGUMENTOS NOMILAES :** 👍Cuando usamos el operador `**` delante del nombre de un parámetro con nombre en una función, estamos señalando que los argumentos pasados a la función como pares `clave-valor` se agruparán en un diccionario.
+>**Ejemplo:**
+```python
+def mostrar_informacion(**registro):
+    for clave, valor in registro.items():
+        print(f"{clave}: {valor}")
+mostrar_informacion(nombre="Juan", edad=30, ciudad="Madrid") 
+```
+- **DESEMPAQUETADO DE ARGUMENTOS NOMILAES :** 👍El desempaquetado de argumentos nominales se realiza utilizando `**` cuando se llama a una función. Esto permite pasar un diccionario de argumentos a una función como si fueran argumentos con nombre individuales.
+>**Ejemplo:**
+```python
+def imprimir_detalles(nombre, edad, ciudad):
+    print(f"Nombre: {nombre}")
+    print(f"Edad: {edad}")
+    print(f"Ciudad: {ciudad}")
+detalles = {"nombre": "Ana", "edad": 25, "ciudad": "Barcelona"}
+imprimir_detalles(**detalles)
+```
+## FUNCIONES INTERNAS DE PYTHON
+### FUNCION DE CONVERSION
+- `int():` Convierte un valor a un número entero.
+
+```python
+num = int("123")
+print(num)  # 123
+```
+- `float():` Convierte un valor a un número de punto flotante.
+```python
+num = float("123.45")
+print(num)  # 123.45
+```
+- `str():` Convierte un valor a una cadena de texto.
+```python
+texto = str(123)
+print(texto)  # '123'
+```
+- `bool():` Convierte un valor a un booleano (True o False).
+```python
+booleano = bool(1)
+print(booleano)  # True
+```
+### FUNCION PARA EL MANEJO DE COLECCIONES
+- `len():` Devuelve la longitud de una colección.
+```python
+longitud = len([1, 2, 3])
+print(longitud)  # : 3
+```
+- `max():` Devuelve el valor máximo de una colección.
+```python
+maximo = max([1, 2, 3])
+print(maximo)  # : 3
+```
+- `min():` Devuelve el valor mínimo de una colección.
+```python
+minimo = min([1, 2, 3])
+print(minimo)  # : 1
+```
+- `sum():` Devuelve la suma de una colección de números.
+```python
+suma = sum([1, 2, 3])
+print(suma)  # : 6
+```
+- `sorted():` Devuelve una lista ordenada a partir de una colección.
+```python
+ordenada = sorted([3, 1, 2])
+print(ordenada)  # : [1, 2, 3]
+```
+- `enumerate():` Devuelve un objeto enumerado (índice, valor) a partir de una colección.
+```python
+lista = ['a', 'b', 'c']
+for indice, valor in enumerate(lista):
+    print(indice, valor) #0 a  #1 b  #2 c
+```
+- `zip():` Combina varias colecciones en una sola.
+```python
+nombres = ['Ana', 'Luis']
+edades = [25, 30]
+combinados = zip(nombres, edades)
+print(list(combinados))  # : [('Ana', 25), ('Luis', 30)]
+```
+### FUNCION PARA LA MANIPULACION DE CADENAS
+- `len():` Devuelve la longitud de una cadena.
+```python
+cadena = "Hola, mundo!"
+longitud = len(cadena)
+print(longitud)  # 12
+```
+- `split():` Divide la cadena en una lista de subcadenas basadas en un delimitador.
+```python
+texto = "uno, dos, tres"
+lista = texto.split(", ")
+print(lista)  # ['uno', 'dos', 'tres']
+```
+- `join():` Une una lista de cadenas en una sola cadena, utilizando un delimitador.
+```python
+lista = ["uno", "dos", "tres"]
+unido = ", ".join(lista)
+print(unido)  # 'uno, dos, tres'
+```
+### FUNCIONES DE ENTRADA/SALIDA
+- `print():` Imprime un valor en la salida estándar.
+```python
+print("Hola, mundo!")  # Hola, mundo!
+```
+- `input():` Lee una cadena desde la entrada estándar.
+```python
+nombre = input("¿Cómo te llamas? ")
+print(f"Hola, {nombre}!")
+```
