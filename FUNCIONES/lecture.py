@@ -25,18 +25,31 @@
 
 # crear una funcion que reciba por parametros una lista de numeros y me devuelva el numero menor,
 # mostrar por terminal el valor retornando la funcion
-def lista_num():
-    lista_numeros=[63,78,54,567]
-    return min(lista_numeros)
-print(lista_num())
+# def lista_num():
+#     lista_numeros=[63,78,54,567]
+#     return min(lista_numeros)
+# print(lista_num())
 
 # crear una funcion como parametro el nombre y la edad de una persona mi funcion debera retornar un diccionario
 # con los datos, luego mostrar por terminal el valor de retorno en mi funcion.
-nombre="paul"
-edad=43
-def persona(nombre,edad):
-    return{
-        "nombre":nombre,
-        "edad":45
-    }
-print(persona(nombre,edad))
+# nombre="paul"
+# edad=43
+# def persona(nombre,edad):
+#     return{
+#         "nombre":nombre,
+#         "edad":45
+#     }
+# print(persona(nombre,edad))
+
+# argumentos posicionales
+def suma(*args):
+    nueva_lista=list(args)
+    nueva_lista[0]=10
+    print(nueva_lista)
+suma(4,7,8,5,2,4)
+
+# argumentos nominales   
+def alumnos(**kwargs):
+    kwargs["nombre"]="abel"
+    print(kwargs)
+alumnos(nombre="miguel",apellido="largo",edad=30)

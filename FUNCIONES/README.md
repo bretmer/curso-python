@@ -243,3 +243,9 @@ print("Hola, mundo!")  # Hola, mundo!
 nombre = input("¿Cómo te llamas? ")
 print(f"Hola, {nombre}!")
 ```
+## TIPOS DE FUNCIONES 
+### FUNCIONES ANONIMAS (Funciones lambda)
+### FUNCIONES CLOSURE
+### FUNCIONES CALLBACK
+
+### PROGRAMACION FUNCIONAL
