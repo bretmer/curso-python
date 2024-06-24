@@ -245,7 +245,32 @@ print(f"Hola, {nombre}!")
 ```
 ## TIPOS DE FUNCIONES 
 ### FUNCIONES ANONIMAS (Funciones lambda)
+Son funciones que no estan definidas, que no tienen la palabra reservada `def` como nombre y `return` como retorno.
+```python
+lambda:"hola"
+```
 ### FUNCIONES CLOSURE
+Son funciones que dentro de su cuerpo reciben otra funciones mas pequeñas
+```python
+def saludo(nombre):
+    print(f"bienvenido, {nombre}")
+```
 ### FUNCIONES CALLBACK
-
+```python
+numero=int(input("ingrese un numero: "))
+```
 ### PROGRAMACION FUNCIONAL
+la programacion funcional no requiere que sepas como es el desarrolla y ejecuta el procesamiento de la informacion.
+```python
+# programacion iterativa
+lista=[5,7,8,4,1]
+def nm_minimo(l):
+    minimo=l[0]
+    for n in l:
+        if n < minimo:
+            minimo=n
+    return minimo        
+# programacion funional
+min(lista)
+```
+#### AVERIGUAR SOBRE MAP(), FILTER(), REDUCE()
