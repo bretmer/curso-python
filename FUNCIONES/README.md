@@ -274,3 +274,45 @@ def nm_minimo(l):
 min(lista)
 ```
 #### AVERIGUAR SOBRE MAP(), FILTER(), REDUCE()
+-  **Función** `MAP:`  Devuelve una matriz formada por la asignación de cada valor de las matrices a un nuevo valor aplicando LAMBDA para crear un nuevo valor.
+>**Ejemplo**:
+```python
+lista = [1, 2, 3, 4, 5]
+def por_dos(x):
+    return x * 2
+lista_pordos = map(por_dos, lista)
+print(list(lista_pordos))  # [2, 4, 6, 8, 10]
+
+# utilizando lambda
+lista = [1, 2, 3, 4, 5]
+lista_pordos = map(lambda x: 2*x, lista)
+print(list(lista_pordos)) # [2, 4, 6, 8, 10]
+```
+- Función `FILTER:`  Recibe una función y una lista pero el resultado es la lista inicial filtrada. Es decir, se pasa cada elemento de la lista por la función, y sólo si su resultado es `True`, se incluye en la nueva lista.
+>**Ejemplo:**
+```python
+lista = [7, 4, 16, 3, 8]
+def es_par(x):
+    return x % 2 == 0
+pares = filter(es_par, lista)
+print(list(pares)) # [4, 16, 8] 
+
+# utilizando lambda
+lista = [7, 4, 16, 3, 8]
+pares = filter(lambda x: x % 2 == 0, lista)
+print(list(pares)) # [4, 16, 8] 
+```
+- Funcion `REDUCE:` Podemos usar `reduce` para reducir todos los elementos de la entrada a un único valor aplicando un determinado criterio. Por ejemplo, podemos sumar todos los elementos de una lista de la siguiente manera.
+>**Ejemplo:**
+```python
+from functools import reduce
+lista = [1, 2, 3, 4, 5]
+suma = reduce(lambda acc, val: acc + val, lista)
+print(suma) # 15
+
+# tambien podemos multilplicar
+from functools import reduce
+lista = [1, 2, 3, 4, 5]
+multiplicacion = reduce(lambda acc, val: acc * val, lista)
+print(multiplicacion) # 120
+```
