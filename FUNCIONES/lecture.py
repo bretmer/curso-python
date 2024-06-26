@@ -68,12 +68,69 @@
 # print(pares(lista))
 
 # funcion callback
-def mensaje(m):
-    print(m)
+# def mensaje(m):
+#     print(m)
+# def pedir_nombre():
+#     nombre=input("ingresa tu nombre")
+#     return nombre
+# mensaje(pedir_nombre())
 
+# funcion map():
+# lista=[4,7,8,5,2]
+# nueva_lista=list(map(lambda x: x+1, lista))
+# print(nueva_lista)
 
-def pedir_nombre():
-    nombre=input("ingresa tu nombre")
-    return nombre
-mensaje(pedir_nombre())
+# tengo una lista de alumnos que todos ellos aprabaron y pasan al tercer semestre
+# problema en mi lista todos estan con el segundo semestre por lo que tendremos que crear 
+# una solucion que cambie el campo de semestre de 2 a 3.
+# lista_alumnos=[
+#     {
+#         "nombre":"abel",
+#         "edad":36,
+#         "semestre":2
+#     },
+#     {
+#         "nombre":"anthony",
+#         "edad":40,
+#         "semestre":2
+#     },
+#     {
+#         "nombre":"edith",
+#         "edad":50,
+#         "semestre":2
+#     }
+# ]
+# def objeto(e):
+#     if "semestre" in e:
+#         e["semestre"]=e["semestre"]+1
+#     e["especialidad"]="arquitectura"
+#     return [
+#             e
+#         ]
+# nueva_lista=list(map(objeto , lista_alumnos))
+# print(nueva_lista)
 
+# devolver los numeros pares de una lista
+# lista_numeros=[4,8,2,5,7,10,6,5,3,20]
+# nueva_lista=list(filter(lambda x: x%2==0, lista_numeros))
+# print(nueva_lista)
+
+lista_alumnos=[
+    {
+        "nombre":"abel",
+        "edad":36,
+        "semestre":2
+    },
+    {
+        "nombre":"anthony",
+        "edad":40,
+        "semestre":2
+    },
+    {
+        "nombre":"edith",
+        "edad":50,
+        "semestre":2
+    }
+]
+otra_lista=list(filter(lambda x: x["edad"]<50, lista_alumnos) )
+print(otra_lista)
