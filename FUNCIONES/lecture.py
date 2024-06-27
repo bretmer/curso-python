@@ -61,11 +61,9 @@
 # crear un progama anomino que reciba como parametro una lista de 5 numeros y 
 # retorne dos listas, una con numeros pares y otra 
 # con numeros impares.
-# lista=[2,5,6,8,1]
-# pares=lambda l:[n for n in lista if n%2==0]
-# impares=lambda l:[n for n in lista if n%2!=0]
-# print(impares(lista))
-# print(pares(lista))
+lista=[2,5,6,8,1]
+pares,impares = lambda lista: [n for n in lista if n%2==0], lambda lista: [n for n in lista if n%2!=0]
+print(pares(lista), impares(lista))
 
 # funcion callback
 # def mensaje(m):
