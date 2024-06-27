@@ -65,6 +65,7 @@ lista=[2,5,6,8,1]
 pares,impares = lambda lista: [n for n in lista if n%2==0], lambda lista: [n for n in lista if n%2!=0]
 print(pares(lista), impares(lista))
 
+
 # funcion callback
 # def mensaje(m):
 #     print(m)
