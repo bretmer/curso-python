@@ -14,4 +14,3 @@ import operaciones
 suma:int=operaciones.suma(7,8)
 mensaje:str=operaciones.mensaje
 print(suma)
-
