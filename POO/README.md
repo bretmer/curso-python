@@ -23,7 +23,7 @@ Un `objeto` es un tipo de dato estructurado que contiene o almacena `datos` y `c
  Un objeto representa una `instnacia unica` de alguna `entidad` a traves de sus atributos e interactua con otros objetos o con si mismo a traves de sus metodos.
 ![alt text](image.png)
 ## ¿QUE ES UNA CLASE?
-Para crear un `objeto` promero debemos definir la `clase`.
+Para crear un `objeto` primero debemos definir la `clase`.
 La clase es como el `molde` con el que se crean nuevos objetos.
 Es el proceso de diseño de una clase hay que tener en cuenta el `principio de responsabilidad unica`, esto intentando que los `atributos` y los `metodos` esten enfocados en un objetivo unico y bien definido.
 ![alt text](image-1.png)
