@@ -15,7 +15,7 @@ class Alumno:
 
 
 jorge=Alumno(70873465,"jorge","peña",21,"M")
-jorge
+jorge.tarea
 
 
 # print(jorge.nombre)
